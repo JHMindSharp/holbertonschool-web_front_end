@@ -9,6 +9,10 @@
     --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-family-base);
     color: var(--text-color);
