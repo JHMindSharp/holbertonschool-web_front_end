@@ -104,3 +104,7 @@ a:link, a:visited, a:hover, a:active {
     margin: var(--section-title-margin);
     color: var(--section-title-color);
 }
+
+.footer {
+    padding: var(--footer-padding);
+}
