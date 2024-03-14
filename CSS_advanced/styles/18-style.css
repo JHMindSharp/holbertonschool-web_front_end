@@ -61,9 +61,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -127,7 +139,7 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
 }
 
-.nav-item {
+.nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -136,11 +148,11 @@ a:link, a:visited, a:hover, a:active {
     margin: var(--nav-item-margin);
 }
 
-.nav-link {
+.nav .nav-link {
     display: block;
     padding: calc( var(--footer-padding) / 2 ) 0;
 }
 
-.nav-link:hover {
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }

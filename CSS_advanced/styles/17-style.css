@@ -54,16 +54,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
     display: none;
 }
 
-.card-category, .section-tagline {
+.card-category,
+.section-tagline {
     color: var(--color-primary);
 }
 
