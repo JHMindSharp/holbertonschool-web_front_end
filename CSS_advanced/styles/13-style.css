@@ -46,16 +46,18 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    font-style: italic;
-}
+a[href]:not([href=""]) {
+    &:visited {
+        font-style: italic;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    &:hover {
+        text-decoration: underline;
+    }
 
-a:active {
-    background-color: var(--color-light-grey);
+    &:active {
+        background-color: var(--color-light-grey);
+    }
 }
 
 .visually-hidden {
