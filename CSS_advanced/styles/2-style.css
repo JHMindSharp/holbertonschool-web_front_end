@@ -1,15 +1,19 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     color: #161616;
 }
+
 a {
     color: #161616;
 }
+
 .visually-hidden {
     display: none;
 }
+
 .section-tagline {
     color: #D73953;
 }
