@@ -67,8 +67,13 @@ a:link, a:visited, a:hover, a:active {
     color: var(--color-primary);
 }
 
+.section {
+    padding: var(--section-padding);
+}
+
 .section-header {
     text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
 }
 
 .section-tagline {
@@ -81,14 +86,6 @@ a:link, a:visited, a:hover, a:active {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.section {
-    padding: var(--section-padding);
-}
-
-.section-header {
-    padding: var(--section-header-padding);
 }
 
 .section-body {
