@@ -188,7 +188,8 @@ ul.row {
     background: var(--color-black);
 }
 
-.footer-address {
+.footer-address,
+.footer .social-link svg {
     color: var(--text-color);
 }
 
