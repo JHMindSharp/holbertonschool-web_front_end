@@ -179,7 +179,13 @@ ul.row {
 
 [class^="col-"] {
     float: left;
-    padding: calc(var(--font-size-base) / 2);
+    padding: 0.5rem;
+}
+
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background: var(--color-black);
 }
 
 .footer-copyright {
