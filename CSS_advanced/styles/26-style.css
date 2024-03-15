@@ -65,7 +65,6 @@ body {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
-    background: var(--color-black);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -108,16 +107,11 @@ a:active {
 }
 
 .section-tagline {
+    color: var(--color-primary);
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
     margin: var(--section-tagline-margin);
-}
-
-.container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .section-body {
@@ -135,6 +129,12 @@ a:active {
     font-weight: var(--font-weight-bold);
     margin: var(--section-title-margin);
     color: var(--section-title-color);
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul.row {
@@ -195,15 +195,62 @@ ul.row {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background: var(--color-black);
+    --button-color: var(--color-white);
 }
 
-.footer-address,
-.footer .social-link svg {
-    color: var(--text-color);
+.social-link {
+    display: block;
 }
 
-.footer .social-link svg {
+.social-link > svg {
     fill: var(--text-color);
+}
+
+.card-services .card-title {
+    margin: 0;
+}
+
+.card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
+.button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+    font-size: var(--button-font-size);
+}
+
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background-color: var(--button-hover-background);
+}
+
+.card-testimonial {
+    text-align: center;
+}
+
+.card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
 }
 
 .footer-copyright {
@@ -218,55 +265,4 @@ ul.row {
 
 .footer {
     padding: var(--footer-padding);
-}
-
-.card-services .card-title {
-    margin: 0;
-}
-
-.card-services a {
-    display: block;
-    padding: 2rem;
-    background-color: var(--color-light-grey);
-    text-decoration: none;
-}
-
-.card-services a:hover {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-}
-
-.button {
-    display: var(--button-display);
-    padding: var(--button-padding);
-    border: var(--button-border);
-    color: var(--button-color);
-    text-decoration: var(--button-text-decoration);
-    font-size: var(--button-font-size);
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.button:hover {
-    color: var(--button-hover-color);
-    text-decoration: var(--button-hover-text-decoration);
-    background-color: var(--button-hover-background);
-}
-
-.card-testimonial {
-    text-align: center;
-}
-
-.card-avatar {
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-}
-
-.card-quote {
-    font-size: var(--font-size-medium);
-    font-style: italic;
-    margin-top: 1rem;
-    color: var(--text-color);
 }
