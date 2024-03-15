@@ -254,6 +254,10 @@ ul.row {
     background-color: var(--button-hover-background);
 }
 
+.card-testimonial {
+    text-align: center;
+}
+
 .card-avatar {
     border-radius: 50%;
     width: 100px;
